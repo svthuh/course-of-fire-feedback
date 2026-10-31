@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest an idea or improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like the app to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would this help you?
+      description: Tell us about the match, stage type, or situation where you'd use it.
+  - type: dropdown
+    id: discipline
+    attributes:
+      label: Which discipline is this for?
+      multiple: true
+      options:
+        - NRL22
+        - PRS / precision rifle
+        - Pistol / carbine
+        - Match director tools
+        - General / all
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Sketches, screenshots, or examples from other apps are welcome.
